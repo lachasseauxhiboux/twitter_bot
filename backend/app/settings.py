@@ -1,3 +1,6 @@
-from os import environ
+from dotenv import load_dotenv
+import os
 
-API_KEY = environ.get('API_KEY')
+load_dotenv()
+
+API_KEY = os.environ.get('API_KEY')
